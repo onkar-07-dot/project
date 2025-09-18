@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auth Page</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+ <style> .page { display: none; } 
+ #login:target, #register:target { display: block; } 
+  body:not(:has(:target)) #login { display: block; } 
+ </style>
+<body>
+
+  
+  <div id="login" class="page">
+    <form>
+      <h1>Login page</h1>
+      <h4>Your username or Email</h4>
+      <input id="username" type="text" placeholder="Your username or Email "/>
+
+      <h4>Your Password</h4>
+      <input id="password" placeholder="password"/><br><br>
+
+      <button type="submit">Login</button>
+       <h4>Not a member yet</h4>
+  <button><a href="#register">Join Us</a></button>
+    </form>
+  </div>
+
+ 
+  
+  <div id="register" class="page" >
+    <form>
+      <h1>Sign UP</h1>
+      <h4>Username</h4>
+      <input id="username" type="text" placeholder="username"/>
+
+      <h4>Firstname</h4>
+      <input id="firstname" type="text" placeholder="Firstname"/>
+
+      <h4>Lastname</h4>
+      <input id="lastname" type="text" placeholder="Lastname"/>
+
+      <h4>Your Email</h4>
+      <input id="email" type="email" placeholder="Your Email"/>
+
+      <h4>Your Password</h4>
+      <input id="password" type="password" placeholder="Your Password"/>
+
+      <h4>Avtar URL</h4>
+      <input id="avtar" type="text" placeholder="Avtar URL"/><br><br>
+
+      <button type="submit">Sign up</button><br><br>
+
+        <h4>Already a member?</h4>
+  <button><a href="#login">Go to login Page</a></button>
+    </form>
+  </div>
+
+
+
+  <script src="./auth.js"></script>
+</body>
+</html>
